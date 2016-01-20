@@ -1,0 +1,13 @@
+com\nlbookland\service\PersonServiceImpl.class
+com\nlbookland\dao\BookDAOImpl.class
+com\nlbookland\model\Person.class
+com\nlbookland\dao\BookDAO.class
+com\nlbookland\model\Book.class
+com\nlbookland\service\BookServiceImpl.class
+com\nlbookland\controller\BookListController.class
+com\nlbookland\controller\PersonBookController.class
+com\nlbookland\dao\PersonDAO.class
+com\nlbookland\dao\PersonDAOImpl.class
+com\nlbookland\service\PersonService.class
+com\nlbookland\service\BookService.class
+com\nlbookland\controller\PersonListController.class
