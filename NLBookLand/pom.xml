@@ -138,17 +138,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>NLBookLand</finalName>
-		 <!-- <resources>
-	        <resource>
-	            <directory>${basedir}/src/main/resources</directory>	            	 
-	            <targetPath>${project.build.directory}</targetPath>          
-	            <includes>
-	                <include>config/log4j.xml</include>
-	                <include>database/populate-data.sql</include>	                
-	            </includes>
-	        </resource>
-	    </resources> -->
+		<finalName>NLBookLand</finalName>		 
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
