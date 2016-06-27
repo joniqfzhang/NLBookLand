@@ -65,5 +65,8 @@ public class Person {
 		this.books = books;
 	}
 	
+	public String toString(){
+		return this.id + " " + this.name + " " + this.phone + " " + this.email;
+	} 
 	
 }

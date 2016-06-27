@@ -13,7 +13,7 @@
 			http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-	<mvc:resources mapping="/reources/**" location="/resouirces/" />
+	<mvc:resources mapping="/resources/**" location="/resources/" />
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven/> 

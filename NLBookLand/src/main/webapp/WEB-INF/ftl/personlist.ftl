@@ -11,21 +11,21 @@
   			$.ajax({ 
   				url: "personbooks?id="+ $(this).attr('id'),  				
   				success: function(data) {//alert(data);
-  						$("#"+divId).html(data);	
+  						$("#"+divId).html("<p>Book lent:</p>" + data);	  						
   						},
-      			error: function() {alert("err");}
+      			error: function() {alert("Retrive data error.");}
   				});
   		}); 
-  	});	
-  					
-  </script>  				
+  	});	 					
+  </script>  
+  		
 <title>Bookland Person List</title>
 </head>
 <body>
 <div class="container">
 	<h2>${message}</h2>
 	
-		<table class="table table-bordered table-hover">
+		<table class="table table-bordered table-hover" >
 		<thead>
 		    <tr>
 		        <th width="80">Person ID</th>
@@ -42,12 +42,13 @@
 			            <td>${person.name}</td>
 			            <td>${person.phone}</td>
 			            <td>${person.email}</td>
-			            <td><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#books-${person.id}" id="${person.id}">Person Books</button></td>
-			            <!--<td><a href="/personbooks?id=${person.id}" >Person Books</a></td>-->				            
-			        </tr>
+					<td><button type="button" class="btn btn-info"
+							data-toggle="collapse" data-target="#books-${person.id}"
+							id="${person.id}">Books Lent</button></td>
+				</tr>
 			        <tr>
-			        	<td colspan=5>
-			        		<div id="books-${person.id}" class="collapse"></div>
+			        	<td colspan=5 style="padding: 0px">
+			        		<div id="books-${person.id}" class="collapse" ></div>
 			        	</td>
 			        </tr>		
 			      </#list>

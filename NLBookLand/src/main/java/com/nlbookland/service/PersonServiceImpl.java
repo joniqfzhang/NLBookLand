@@ -10,6 +10,7 @@ import com.nlbookland.dao.PersonDAO;
 import com.nlbookland.model.Person;
 
 @Service
+@Transactional
 public class PersonServiceImpl implements PersonService {
 	@Autowired 
 	private PersonDAO personDAO;
@@ -18,9 +19,8 @@ public class PersonServiceImpl implements PersonService {
         this.personDAO = pDAO;
     }
  
-	@Transactional
-	public List<Person> listPerson() {
-		// TODO Auto-generated method stub
+	@Override
+	public List<Person> listPerson() {		
 		return this.personDAO.listPerson();
 	}
 

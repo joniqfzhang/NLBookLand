@@ -10,8 +10,8 @@
 <body>
  <div class="container">
 	<center>
-		<h2>${rootmessage}</h2>
-		<h3>${message}</h3>
+		<h2>${rootmessage_greeting}</h2>
+		<h3>${rootmessage_info}</h3>
 		<h4>
 			<a href="booklist" class="btn btn-primary btn-lg">Click Here to book list</a>
 		</h4>

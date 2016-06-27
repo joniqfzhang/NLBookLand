@@ -9,9 +9,9 @@
 </head>
 <body>
 <div class="container">
-	<h2>${message}</h2>
+	<h2>${booklist_message}</h2>
 
-		<table class="table table-hover">
+		<table class="table table-bordered table-hover">
 		<thead>
 		    <tr>
 		        <th width="80">Book ID</th>
@@ -20,15 +20,15 @@
 		        <th width="150">Book ISBN</th>  
 		    </tr>          		
         </thead>
-		<tbody>	       
-			   <#list booklist as book>
-			        <tr>
-			            <td>${book.id}</td>
-			            <td>${book.title}</td>
-			            <td>${book.author}</td>
-			            <td>${book.isbn}</td>			           
-			        </tr>
-			    </#list>
+		<tbody>	       			
+			<#list booklist as book>			  
+			 <tr>
+			     <td>${book.id}</td>
+			     <td>${book.title}</td>
+			     <td>${book.author}</td>
+			     <td>${book.isbn}</td>			           
+			 </tr>		     
+			 </#list>
 		 </tbody>	    
 		 </table>
 		 <a href="/" class="btn btn-success" >Go Back to BookLand</a>
